@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/startApp/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/base/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+              <folding>
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/base/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#2690#2691#0" expanded="true" />
+                <element signature="e#2717#2718#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/contacts.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/agenda.exceptions.InvalidFormatException">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>agenda.exceptions.InvalidFormatException</OriginalElement>
+              <nodes>
+                <node x="10.5" y="873.0">agenda.model.repository.classes.RepositoryContactMock</node>
+                <node x="653.5374999999999" y="0.0">agenda.exceptions.InvalidFormatException</node>
+                <node x="256.3914408866989" y="541.0">agenda.model.repository.interfaces.RepositoryContact</node>
+                <node x="1217.117364532019" y="1482.0">agenda.model.repository.classes.RepositoryUserFile</node>
+                <node x="452.0624999999999" y="1238.0">agenda.model.repository.interfaces.RepositoryActivity</node>
+                <node x="1919.585057471264" y="0.0">agenda.gui.models.TableModelContact</node>
+                <node x="668.5624999999999" y="1482.0">agenda.model.repository.classes.RepositoryActivityMock</node>
+                <node x="0.0" y="1953.0">agenda.gui.models.TableModelActivity</node>
+                <node x="1716.585057471264" y="0.0">agenda.model.repository.classes.RepositoryUserMock</node>
+                <node x="1374.585057471264" y="1249.0">agenda.model.repository.interfaces.RepositoryUser</node>
+                <node x="274.49999999999994" y="1471.0">agenda.model.repository.classes.RepositoryActivityFile</node>
+                <node x="468.87499999999983" y="101.0">agenda.model.base.Contact</node>
+                <node x="781.3673645320192" y="1769.0">agenda.startApp.MainClass</node>
+                <node x="1213.252709359606" y="840.0">agenda.model.base.User</node>
+                <node x="359.0" y="1953.0">agenda.gui.window.MainWindow</node>
+                <node x="915.3673645320193" y="862.0">agenda.model.repository.classes.RepositoryContactFile</node>
+                <node x="193.0" y="1953.0">agenda.gui.window.LoginWindow</node>
+                <node x="582.1771551724132" y="752.0">agenda.model.base.Activity</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="agenda.model.repository.classes.RepositoryActivityMock" target="agenda.model.base.Activity">
+                  <point x="0.0" y="-103.0" />
+                  <point x="817.0624999999999" y="1446.0" />
+                  <point x="759.5624999999999" y="1446.0" />
+                  <point x="759.5624999999999" y="1218.0" />
+                  <point x="736.6771551724132" y="1218.0" />
+                  <point x="0.0" y="213.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.model.base.Contact">
+                  <point x="0.0" y="-92.0" />
+                  <point x="132.0" y="732.0" />
+                  <point x="113.19999999999993" y="732.0" />
+                  <point x="113.19999999999993" y="501.0" />
+                  <point x="529.8749999999998" y="501.0" />
+                  <point x="-61.0" y="180.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.base.Contact">
+                  <point x="-229.1666666666664" y="-69.5" />
+                  <point x="802.2006978653528" y="1749.0" />
+                  <point x="0.0" y="1749.0" />
+                  <point x="0.0" y="481.0" />
+                  <point x="481.0749999999999" y="481.0" />
+                  <point x="-109.79999999999995" y="180.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.exceptions.InvalidFormatException">
+                  <point x="91.125" y="-103.0" />
+                  <point x="1127.9923645320193" y="732.0" />
+                  <point x="1096.9375" y="732.0" />
+                  <point x="1096.9375" y="81.0" />
+                  <point x="767.2874999999999" y="81.0" />
+                  <point x="22.75" y="25.5" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryUser">
+                  <point x="229.16666666666674" y="-69.5" />
+                  <point x="1260.534031198686" y="1749.0" />
+                  <point x="1597.335057471264" y="1749.0" />
+                  <point x="74.25" y="80.5" />
+                </edge>
+                <edge source="agenda.model.repository.interfaces.RepositoryUser" target="agenda.model.base.User">
+                  <point x="0.0" y="-80.5" />
+                  <point x="1523.085057471264" y="1218.0" />
+                  <point x="1437.252709359606" y="1218.0" />
+                  <point x="96.0" y="125.0" />
+                </edge>
+                <edge source="agenda.model.repository.interfaces.RepositoryActivity" target="agenda.model.base.Activity">
+                  <point x="0.0" y="-91.5" />
+                  <point x="600.5624999999999" y="1218.0" />
+                  <point x="692.5342980295561" y="1218.0" />
+                  <point x="-44.14285714285711" y="213.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.base.Activity">
+                  <point x="-37.125000000000114" y="-114.0" />
+                  <point x="385.87499999999983" y="1446.0" />
+                  <point x="388.89144088669894" y="1446.0" />
+                  <point x="388.89144088669894" y="1198.0" />
+                  <point x="604.2485837438417" y="1198.0" />
+                  <point x="-132.42857142857156" y="213.0" />
+                </edge>
+                <edge source="agenda.model.base.Contact" target="agenda.exceptions.InvalidFormatException">
+                  <point x="0.0" y="-180.0" />
+                  <point x="590.8749999999998" y="81.0" />
+                  <point x="721.7874999999999" y="81.0" />
+                  <point x="-22.75" y="25.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryActivityMock" target="agenda.model.repository.interfaces.RepositoryActivity">
+                  <point x="-99.0" y="-103.0" />
+                  <point x="718.0624999999999" y="1446.0" />
+                  <point x="699.5624999999999" y="1446.0" />
+                  <point x="99.0" y="91.5" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.base.Activity">
+                  <point x="-20.833333333333258" y="-69.5" />
+                  <point x="1010.534031198686" y="1749.0" />
+                  <point x="987.0624999999999" y="1749.0" />
+                  <point x="987.0624999999999" y="1198.0" />
+                  <point x="869.1057266009846" y="1198.0" />
+                  <point x="132.42857142857133" y="213.0" />
+                </edge>
+                <edge source="agenda.model.repository.interfaces.RepositoryContact" target="agenda.model.base.Contact">
+                  <point x="0.0" y="-80.5" />
+                  <point x="377.8914408866989" y="521.0" />
+                  <point x="578.6749999999997" y="521.0" />
+                  <point x="-12.200000000000045" y="180.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryUserFile">
+                  <point x="187.5" y="-69.5" />
+                  <point x="1218.867364532019" y="1739.0" />
+                  <point x="1365.617364532019" y="1739.0" />
+                  <point x="0.0" y="103.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.model.repository.interfaces.RepositoryContact">
+                  <point x="97.20000000000005" y="-92.0" />
+                  <point x="229.20000000000005" y="722.0" />
+                  <point x="280.69144088669884" y="722.0" />
+                  <point x="-97.20000000000005" y="80.5" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.base.User">
+                  <point x="145.83333333333337" y="-69.5" />
+                  <point x="1177.2006978653526" y="1749.0" />
+                  <point x="1206.6173645320193" y="1749.0" />
+                  <point x="1206.6173645320193" y="1218.0" />
+                  <point x="1245.252709359606" y="1218.0" />
+                  <point x="-96.0" y="125.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryUserFile" target="agenda.model.repository.interfaces.RepositoryUser">
+                  <point x="99.0" y="-103.0" />
+                  <point x="1464.617364532019" y="1446.0" />
+                  <point x="1448.835057471264" y="1446.0" />
+                  <point x="-74.25" y="80.5" />
+                </edge>
+                <edge source="agenda.model.base.Activity" target="agenda.model.repository.interfaces.RepositoryContact">
+                  <point x="-103.0" y="-213.0" />
+                  <point x="633.6771551724132" y="732.0" />
+                  <point x="426.4914408866988" y="732.0" />
+                  <point x="48.59999999999991" y="80.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryUserFile" target="agenda.model.base.User">
+                  <point x="0.0" y="-103.0" />
+                  <point x="1365.617364532019" y="1446.0" />
+                  <point x="1357.210057471264" y="1446.0" />
+                  <point x="1357.210057471264" y="1218.0" />
+                  <point x="1373.252709359606" y="1218.0" />
+                  <point x="32.0" y="125.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.exceptions.InvalidFormatException">
+                  <point x="104.16666666666674" y="-69.5" />
+                  <point x="1135.534031198686" y="1739.0" />
+                  <point x="1179.8673645320193" y="1739.0" />
+                  <point x="1179.8673645320193" y="71.0" />
+                  <point x="812.7874999999999" y="71.0" />
+                  <point x="68.25" y="25.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.model.repository.interfaces.RepositoryContact">
+                  <point x="-91.125" y="-103.0" />
+                  <point x="945.7423645320193" y="722.0" />
+                  <point x="475.0914408866988" y="722.0" />
+                  <point x="97.19999999999993" y="80.5" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryContactFile">
+                  <point x="20.83333333333337" y="-69.5" />
+                  <point x="1052.2006978653526" y="1749.0" />
+                  <point x="1036.8673645320193" y="1749.0" />
+                  <point x="0.0" y="103.0" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.repository.interfaces.RepositoryContact">
+                  <point x="-111.37500000000011" y="-114.0" />
+                  <point x="311.62499999999983" y="1446.0" />
+                  <point x="376.58165024630495" y="1446.0" />
+                  <point x="376.58165024630495" y="732.0" />
+                  <point x="377.8914408866989" y="732.0" />
+                  <point x="0.0" y="80.5" />
+                </edge>
+                <edge source="agenda.model.base.Activity" target="agenda.model.base.Contact">
+                  <point x="0.0" y="-213.0" />
+                  <point x="736.6771551724132" y="732.0" />
+                  <point x="774.4600574712642" y="732.0" />
+                  <point x="774.4600574712642" y="521.0" />
+                  <point x="603.0749999999998" y="521.0" />
+                  <point x="12.200000000000045" y="180.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryActivityFile">
+                  <point x="-145.83333333333314" y="-69.5" />
+                  <point x="885.5340311986861" y="1729.0" />
+                  <point x="422.99999999999994" y="1729.0" />
+                  <point x="0.0" y="114.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryActivity">
+                  <point x="-104.16666666666652" y="-69.5" />
+                  <point x="927.2006978653527" y="1719.0" />
+                  <point x="600.5624999999999" y="1719.0" />
+                  <point x="0.0" y="91.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.repository.interfaces.RepositoryActivity">
+                  <point x="111.37499999999989" y="-114.0" />
+                  <point x="534.3749999999998" y="1446.0" />
+                  <point x="501.5624999999999" y="1446.0" />
+                  <point x="-99.0" y="91.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.model.base.Contact">
+                  <point x="30.375" y="-103.0" />
+                  <point x="1067.2423645320193" y="732.0" />
+                  <point x="1075.9600574712642" y="732.0" />
+                  <point x="1075.9600574712642" y="491.0" />
+                  <point x="676.2749999999999" y="491.0" />
+                  <point x="85.40000000000009" y="180.0" />
+                </edge>
+                <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryContact">
+                  <point x="-187.49999999999977" y="-69.5" />
+                  <point x="843.8673645320195" y="1739.0" />
+                  <point x="264.0" y="1739.0" />
+                  <point x="264.0" y="732.0" />
+                  <point x="329.29144088669887" y="732.0" />
+                  <point x="-48.60000000000002" y="80.5" />
+                </edge>
+                <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.exceptions.InvalidFormatException">
+                  <point x="-97.19999999999993" y="-92.0" />
+                  <point x="34.80000000000007" y="722.0" />
+                  <point x="91.19999999999993" y="722.0" />
+                  <point x="91.19999999999993" y="71.0" />
+                  <point x="676.2874999999999" y="71.0" />
+                  <point x="-68.25" y="25.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6066565809379728" x="648.1533665835411" y="1623.9850374064838" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-245">
+              <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1410">
+              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-755">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/interfaces/RepositoryActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>printf</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>print</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/base/Contact.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/base/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityMock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/base/Activity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/startApp/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityFile.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="window" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="agenda" type="462c0819:PsiDirectoryNode" />
+              <item name="startApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552152315599" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Docs/Lab01" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java\agenda" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java\agenda" />
+      <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agenda.startApp.MainClass" />
+      <module name="ProiectAgenda" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agenda.startApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="" />
+      <created>1551682141299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551682141299</updated>
+      <workItem from="1551682145750" duration="453000" />
+      <workItem from="1551908714672" duration="3859000" />
+      <workItem from="1552146337077" duration="3767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8079000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29635626" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4979757" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.44404975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.19715808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" weight="0.19715808" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49959514" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24939272" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29635626" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4979757" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.44404975" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" visible="true" weight="0.19715808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50040483" side_tool="true" visible="true" weight="0.19715808" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49959514" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24939272" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="D:/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/agenda/startApp/MainClass.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/exceptions/InvalidFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/gui/models/TableModelActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/gui/models/TableModelContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/gui/window/LoginWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/gui/window/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/interfaces/RepositoryUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-482">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/base/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/interfaces/RepositoryContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/users">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/contacts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/activities">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/activities.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddContactTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-221">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AfisActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/interfaces/RepositoryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AddActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryUserFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-755">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryActivityFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="109" column="32" selection-start-line="109" selection-start-column="32" selection-end-line="109" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/base/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/startApp/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/repository/classes/RepositoryContactFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/model/base/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#2690#2691#0" expanded="true" />
+            <element signature="e#2717#2718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/agenda.gui.models.TableModelContact">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>agenda.gui.models.TableModelContact</OriginalElement>
+          <nodes>
+            <node x="" y="">agenda.gui.models.TableModelContact</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="75.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/contacts.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/agenda.exceptions.InvalidFormatException">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>agenda.exceptions.InvalidFormatException</OriginalElement>
+          <nodes>
+            <node x="10.5" y="873.0">agenda.model.repository.classes.RepositoryContactMock</node>
+            <node x="653.5374999999999" y="0.0">agenda.exceptions.InvalidFormatException</node>
+            <node x="256.3914408866989" y="541.0">agenda.model.repository.interfaces.RepositoryContact</node>
+            <node x="1217.117364532019" y="1482.0">agenda.model.repository.classes.RepositoryUserFile</node>
+            <node x="452.0624999999999" y="1238.0">agenda.model.repository.interfaces.RepositoryActivity</node>
+            <node x="1919.585057471264" y="0.0">agenda.gui.models.TableModelContact</node>
+            <node x="668.5624999999999" y="1482.0">agenda.model.repository.classes.RepositoryActivityMock</node>
+            <node x="0.0" y="1953.0">agenda.gui.models.TableModelActivity</node>
+            <node x="1716.585057471264" y="0.0">agenda.model.repository.classes.RepositoryUserMock</node>
+            <node x="1374.585057471264" y="1249.0">agenda.model.repository.interfaces.RepositoryUser</node>
+            <node x="274.49999999999994" y="1471.0">agenda.model.repository.classes.RepositoryActivityFile</node>
+            <node x="468.87499999999983" y="101.0">agenda.model.base.Contact</node>
+            <node x="781.3673645320192" y="1769.0">agenda.startApp.MainClass</node>
+            <node x="1213.252709359606" y="840.0">agenda.model.base.User</node>
+            <node x="359.0" y="1953.0">agenda.gui.window.MainWindow</node>
+            <node x="915.3673645320193" y="862.0">agenda.model.repository.classes.RepositoryContactFile</node>
+            <node x="193.0" y="1953.0">agenda.gui.window.LoginWindow</node>
+            <node x="582.1771551724132" y="752.0">agenda.model.base.Activity</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="agenda.model.repository.classes.RepositoryActivityMock" target="agenda.model.base.Activity">
+              <point x="0.0" y="-103.0" />
+              <point x="817.0624999999999" y="1446.0" />
+              <point x="759.5624999999999" y="1446.0" />
+              <point x="759.5624999999999" y="1218.0" />
+              <point x="736.6771551724132" y="1218.0" />
+              <point x="0.0" y="213.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.model.base.Contact">
+              <point x="0.0" y="-92.0" />
+              <point x="132.0" y="732.0" />
+              <point x="113.19999999999993" y="732.0" />
+              <point x="113.19999999999993" y="501.0" />
+              <point x="529.8749999999998" y="501.0" />
+              <point x="-61.0" y="180.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.base.Contact">
+              <point x="-229.1666666666664" y="-69.5" />
+              <point x="802.2006978653528" y="1749.0" />
+              <point x="0.0" y="1749.0" />
+              <point x="0.0" y="481.0" />
+              <point x="481.0749999999999" y="481.0" />
+              <point x="-109.79999999999995" y="180.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.exceptions.InvalidFormatException">
+              <point x="91.125" y="-103.0" />
+              <point x="1127.9923645320193" y="732.0" />
+              <point x="1096.9375" y="732.0" />
+              <point x="1096.9375" y="81.0" />
+              <point x="767.2874999999999" y="81.0" />
+              <point x="22.75" y="25.5" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryUser">
+              <point x="229.16666666666674" y="-69.5" />
+              <point x="1260.534031198686" y="1749.0" />
+              <point x="1597.335057471264" y="1749.0" />
+              <point x="74.25" y="80.5" />
+            </edge>
+            <edge source="agenda.model.repository.interfaces.RepositoryUser" target="agenda.model.base.User">
+              <point x="0.0" y="-80.5" />
+              <point x="1523.085057471264" y="1218.0" />
+              <point x="1437.252709359606" y="1218.0" />
+              <point x="96.0" y="125.0" />
+            </edge>
+            <edge source="agenda.model.repository.interfaces.RepositoryActivity" target="agenda.model.base.Activity">
+              <point x="0.0" y="-91.5" />
+              <point x="600.5624999999999" y="1218.0" />
+              <point x="692.5342980295561" y="1218.0" />
+              <point x="-44.14285714285711" y="213.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.base.Activity">
+              <point x="-37.125000000000114" y="-114.0" />
+              <point x="385.87499999999983" y="1446.0" />
+              <point x="388.89144088669894" y="1446.0" />
+              <point x="388.89144088669894" y="1198.0" />
+              <point x="604.2485837438417" y="1198.0" />
+              <point x="-132.42857142857156" y="213.0" />
+            </edge>
+            <edge source="agenda.model.base.Contact" target="agenda.exceptions.InvalidFormatException">
+              <point x="0.0" y="-180.0" />
+              <point x="590.8749999999998" y="81.0" />
+              <point x="721.7874999999999" y="81.0" />
+              <point x="-22.75" y="25.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryActivityMock" target="agenda.model.repository.interfaces.RepositoryActivity">
+              <point x="-99.0" y="-103.0" />
+              <point x="718.0624999999999" y="1446.0" />
+              <point x="699.5624999999999" y="1446.0" />
+              <point x="99.0" y="91.5" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.base.Activity">
+              <point x="-20.833333333333258" y="-69.5" />
+              <point x="1010.534031198686" y="1749.0" />
+              <point x="987.0624999999999" y="1749.0" />
+              <point x="987.0624999999999" y="1198.0" />
+              <point x="869.1057266009846" y="1198.0" />
+              <point x="132.42857142857133" y="213.0" />
+            </edge>
+            <edge source="agenda.model.repository.interfaces.RepositoryContact" target="agenda.model.base.Contact">
+              <point x="0.0" y="-80.5" />
+              <point x="377.8914408866989" y="521.0" />
+              <point x="578.6749999999997" y="521.0" />
+              <point x="-12.200000000000045" y="180.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryUserFile">
+              <point x="187.5" y="-69.5" />
+              <point x="1218.867364532019" y="1739.0" />
+              <point x="1365.617364532019" y="1739.0" />
+              <point x="0.0" y="103.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.model.repository.interfaces.RepositoryContact">
+              <point x="97.20000000000005" y="-92.0" />
+              <point x="229.20000000000005" y="722.0" />
+              <point x="280.69144088669884" y="722.0" />
+              <point x="-97.20000000000005" y="80.5" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.base.User">
+              <point x="145.83333333333337" y="-69.5" />
+              <point x="1177.2006978653526" y="1749.0" />
+              <point x="1206.6173645320193" y="1749.0" />
+              <point x="1206.6173645320193" y="1218.0" />
+              <point x="1245.252709359606" y="1218.0" />
+              <point x="-96.0" y="125.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryUserFile" target="agenda.model.repository.interfaces.RepositoryUser">
+              <point x="99.0" y="-103.0" />
+              <point x="1464.617364532019" y="1446.0" />
+              <point x="1448.835057471264" y="1446.0" />
+              <point x="-74.25" y="80.5" />
+            </edge>
+            <edge source="agenda.model.base.Activity" target="agenda.model.repository.interfaces.RepositoryContact">
+              <point x="-103.0" y="-213.0" />
+              <point x="633.6771551724132" y="732.0" />
+              <point x="426.4914408866988" y="732.0" />
+              <point x="48.59999999999991" y="80.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryUserFile" target="agenda.model.base.User">
+              <point x="0.0" y="-103.0" />
+              <point x="1365.617364532019" y="1446.0" />
+              <point x="1357.210057471264" y="1446.0" />
+              <point x="1357.210057471264" y="1218.0" />
+              <point x="1373.252709359606" y="1218.0" />
+              <point x="32.0" y="125.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.exceptions.InvalidFormatException">
+              <point x="104.16666666666674" y="-69.5" />
+              <point x="1135.534031198686" y="1739.0" />
+              <point x="1179.8673645320193" y="1739.0" />
+              <point x="1179.8673645320193" y="71.0" />
+              <point x="812.7874999999999" y="71.0" />
+              <point x="68.25" y="25.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.model.repository.interfaces.RepositoryContact">
+              <point x="-91.125" y="-103.0" />
+              <point x="945.7423645320193" y="722.0" />
+              <point x="475.0914408866988" y="722.0" />
+              <point x="97.19999999999993" y="80.5" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryContactFile">
+              <point x="20.83333333333337" y="-69.5" />
+              <point x="1052.2006978653526" y="1749.0" />
+              <point x="1036.8673645320193" y="1749.0" />
+              <point x="0.0" y="103.0" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.repository.interfaces.RepositoryContact">
+              <point x="-111.37500000000011" y="-114.0" />
+              <point x="311.62499999999983" y="1446.0" />
+              <point x="376.58165024630495" y="1446.0" />
+              <point x="376.58165024630495" y="732.0" />
+              <point x="377.8914408866989" y="732.0" />
+              <point x="0.0" y="80.5" />
+            </edge>
+            <edge source="agenda.model.base.Activity" target="agenda.model.base.Contact">
+              <point x="0.0" y="-213.0" />
+              <point x="736.6771551724132" y="732.0" />
+              <point x="774.4600574712642" y="732.0" />
+              <point x="774.4600574712642" y="521.0" />
+              <point x="603.0749999999998" y="521.0" />
+              <point x="12.200000000000045" y="180.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.classes.RepositoryActivityFile">
+              <point x="-145.83333333333314" y="-69.5" />
+              <point x="885.5340311986861" y="1729.0" />
+              <point x="422.99999999999994" y="1729.0" />
+              <point x="0.0" y="114.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryActivity">
+              <point x="-104.16666666666652" y="-69.5" />
+              <point x="927.2006978653527" y="1719.0" />
+              <point x="600.5624999999999" y="1719.0" />
+              <point x="0.0" y="91.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryActivityFile" target="agenda.model.repository.interfaces.RepositoryActivity">
+              <point x="111.37499999999989" y="-114.0" />
+              <point x="534.3749999999998" y="1446.0" />
+              <point x="501.5624999999999" y="1446.0" />
+              <point x="-99.0" y="91.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactFile" target="agenda.model.base.Contact">
+              <point x="30.375" y="-103.0" />
+              <point x="1067.2423645320193" y="732.0" />
+              <point x="1075.9600574712642" y="732.0" />
+              <point x="1075.9600574712642" y="491.0" />
+              <point x="676.2749999999999" y="491.0" />
+              <point x="85.40000000000009" y="180.0" />
+            </edge>
+            <edge source="agenda.startApp.MainClass" target="agenda.model.repository.interfaces.RepositoryContact">
+              <point x="-187.49999999999977" y="-69.5" />
+              <point x="843.8673645320195" y="1739.0" />
+              <point x="264.0" y="1739.0" />
+              <point x="264.0" y="732.0" />
+              <point x="329.29144088669887" y="732.0" />
+              <point x="-48.60000000000002" y="80.5" />
+            </edge>
+            <edge source="agenda.model.repository.classes.RepositoryContactMock" target="agenda.exceptions.InvalidFormatException">
+              <point x="-97.19999999999993" y="-92.0" />
+              <point x="34.80000000000007" y="722.0" />
+              <point x="91.19999999999993" y="722.0" />
+              <point x="91.19999999999993" y="71.0" />
+              <point x="676.2874999999999" y="71.0" />
+              <point x="-68.25" y="25.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6066565809379728" x="648.1533665835411" y="1623.9850374064838" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
