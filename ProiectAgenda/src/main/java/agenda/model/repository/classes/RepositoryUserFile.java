@@ -10,15 +10,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 import agenda.model.base.User;
-import agenda.model.repository.interfaces.RepositoryUser;
+import agenda.model.repository.interfaces.IRepositoryUser;
 
-public class RepositoryUserFile implements RepositoryUser{
+public class RepositoryUserFile implements IRepositoryUser {
 
 	private List<User> users;
-	private static final String filename = "D:\\VVSS2019\\ProiectAgenda\\files\\users.txt";
-	
-	public RepositoryUserFile() throws Exception 
+	private  String filename;
+
+	public RepositoryUserFile(String filename) throws Exception
 	{
+		this.filename=filename;
 		users = new LinkedList<User>();
 		BufferedReader br = null;
 		try {
@@ -27,7 +28,12 @@ public class RepositoryUserFile implements RepositoryUser{
 			int i = 0;
 			while (( line = br.readLine())!= null)
 			{
-				User u = User.fromString(line);
+				String[] str = line.split("#");
+				User u=null;
+				try {
+					u=new  User(str[0], str[1], str[2]);
+				} catch (Exception e) {
+				}
 				if (u == null) 
 					throw new Exception("Error in file at line "+i, new Throwable("Invalid Activity"));
 				users.add(u);
@@ -40,29 +46,7 @@ public class RepositoryUserFile implements RepositoryUser{
 			if (br!=null) br.close();
 		}
 	}
-	
-	@Override
-	public User getByUsername(String username) {
-		for (User u : users)
-			if (u.getUsername().equals(username)) return u;
-		return null;
-	}
 
-	@Override
-	public User getByName(String name) {
-		for (User u : users)
-			if (u.getName().equals(name)) return u;
-		return null;
-	}
-
-	@Override
-	public boolean changePasswd(User user, String oldPasswd, String newPasswd) {
-		int index = users.indexOf(user);
-		if (index < 0) return false;
-		return users.get(index).setPassword(oldPasswd, newPasswd);
-	}
-
-	@Override
 	public boolean save() {
 		PrintWriter pw = null;
 		try{
@@ -80,13 +64,24 @@ public class RepositoryUserFile implements RepositoryUser{
 	}
 
 	@Override
-	public List<User> getUsers() {
-		return new LinkedList<User>(users);
+	public boolean add(User item) {
+		return false;
 	}
 
 	@Override
-	public int getCount() {
-		return users.size();
+	public boolean remove(User item) {
+		return false;
 	}
+
+	@Override
+	public boolean update(User item) {
+		return false;
+	}
+
+	@Override
+	public List<User> getAll() {
+		return new LinkedList<User>(users);
+	}
+
 
 }

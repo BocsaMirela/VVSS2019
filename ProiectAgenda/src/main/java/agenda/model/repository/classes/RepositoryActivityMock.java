@@ -6,9 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import agenda.model.base.Activity;
-import agenda.model.repository.interfaces.RepositoryActivity;
+import agenda.model.repository.interfaces.IRepositoryActivity;
 
-public class RepositoryActivityMock implements RepositoryActivity {
+public class RepositoryActivityMock implements IRepositoryActivity {
 
     private List<Activity> activities;
 
@@ -40,12 +40,12 @@ public class RepositoryActivityMock implements RepositoryActivity {
     }
 
     @Override
-    public List<Activity> getActivities() {
+    public List<Activity> getAll() {
         return new LinkedList<Activity>(activities);
     }
 
     @Override
-    public boolean addActivity(Activity activity) {
+    public boolean add(Activity activity) {
         int i = 0;
         boolean conflicts = false;
 
@@ -71,7 +71,7 @@ public class RepositoryActivityMock implements RepositoryActivity {
     }
 
     @Override
-    public boolean removeActivity(Activity activity) {
+    public boolean remove(Activity activity) {
         int index = activities.indexOf(activity);
         if (index < 0) return false;
         activities.remove(index);
@@ -79,16 +79,18 @@ public class RepositoryActivityMock implements RepositoryActivity {
     }
 
     @Override
+    public boolean update(Activity item) {
+        return false;
+    }
+
     public boolean saveActivities() {
         return true;
     }
 
-    @Override
     public int count() {
         return activities.size();
     }
 
-    @Override
     public List<Activity> activitiesByName(String name) {
         List<Activity> result = new LinkedList<Activity>();
         for (Activity a : activities)
@@ -96,7 +98,6 @@ public class RepositoryActivityMock implements RepositoryActivity {
         return result;
     }
 
-    @Override
     public List<Activity> activitiesOnDate(String name, Date d) {
         List<Activity> result = new LinkedList<Activity>();
         for (Activity a : activities)

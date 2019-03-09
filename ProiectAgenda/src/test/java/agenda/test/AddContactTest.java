@@ -9,13 +9,13 @@ import agenda.exceptions.InvalidFormatException;
 
 import agenda.model.base.Contact;
 import agenda.model.repository.classes.RepositoryContactMock;
-import agenda.model.repository.interfaces.RepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryContact;
 
 
 public class AddContactTest {
 
 	private Contact con;
-	private RepositoryContact rep;
+	private IRepositoryContact rep;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -31,8 +31,8 @@ public class AddContactTest {
 			assertTrue(false);
 		}
 		//int n = rep.count();
-		rep.addContact(con);
-		for(Contact c : rep.getContacts())
+		rep.add(con);
+		for(Contact c : rep.getAll())
 			if (c.equals(con))
 			{
 				assertTrue(true);
@@ -45,7 +45,7 @@ public class AddContactTest {
 	public void testCase2()
 	{
 		try{
-			rep.addContact((Contact) new Object());
+			rep.add((Contact) new Object());
 		}
 		catch(Exception e)
 		{
@@ -56,18 +56,18 @@ public class AddContactTest {
 	@Test
 	public void testCase3()
 	{
-		for(Contact c : rep.getContacts())
-			rep.removeContact(c);
+		for(Contact c : rep.getAll())
+			rep.remove(c);
 		
 		try {
 			con = new Contact("name", "address1", "+071122334455");
-			rep.addContact(con);
+			rep.add(con);
 		} catch (InvalidFormatException e) {
 			assertTrue(false);
 		}
-		int n  = rep.count();
+		int n  = rep.getAll().size();
 		if (n == 1) 
-			if (con.equals(rep.getContacts().get(0))) assertTrue(true);
+			if (con.equals(rep.getAll().get(0))) assertTrue(true);
 			else assertTrue(false);
 		else assertTrue(false);
 	}

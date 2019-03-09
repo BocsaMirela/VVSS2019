@@ -3,91 +3,56 @@ package agenda.model.base;
 import agenda.exceptions.InvalidFormatException;
 
 public class Contact {
-    private String Name;
-    private String Address;
-    private String Telefon;
+    private String name;
+    private String address;
+    private String telefon;
 
     public Contact() {
-        Name = "";
-        Address = "";
-        Telefon = "";
+        name = "";
+        address = "";
+        telefon = "";
     }
 
-    public Contact(String name, String address, String telefon) throws InvalidFormatException {
-        if (!validTelefon(telefon)) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
-        if (!validName(name)) throw new InvalidFormatException("Cannot convert", "Invalid name");
-        if (!validAddress(address)) throw new InvalidFormatException("Cannot convert", "Invalid address");
-        Name = name;
-        Address = address;
-        Telefon = telefon;
+    public Contact(String name, String address, String telefon) {
+        this.name = name;
+        this.address = address;
+        this.telefon = telefon;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
-    public void setName(String name) throws InvalidFormatException {
-        if (!validName(name)) throw new InvalidFormatException("Cannot convert", "Invalid name");
-        Name = name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
-    public void setAddress(String address) throws InvalidFormatException {
-        if (!validAddress(address)) throw new InvalidFormatException("Cannot convert", "Invalid address");
-        Address = address;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getTelefon() {
-        return Telefon;
+        return telefon;
     }
 
-    public void setTelefon(String telefon) throws InvalidFormatException {
-        if (!validTelefon(telefon)) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
-        Telefon = telefon;
-    }
-
-    public static Contact fromString(String str, String delim) throws InvalidFormatException {
-        String[] s = str.split(delim);
-        if (s.length != 4) throw new InvalidFormatException("Cannot convert", "Invalid data");
-        if (!validTelefon(s[2])) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
-        if (!validName(s[0])) throw new InvalidFormatException("Cannot convert", "Invalid name");
-        if (!validAddress(s[1])) throw new InvalidFormatException("Cannot convert", "Invalid address");
-
-        return new Contact(s[0], s[1], s[2]);
+    public void setTelefon(String telefon) {
+        this.telefon = telefon;
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(Name);
+        sb.append(name);
         sb.append("#");
-        sb.append(Address);
+        sb.append(address);
         sb.append("#");
-        sb.append(Telefon);
+        sb.append(telefon);
         sb.append("#");
         return sb.toString();
-    }
-
-    private static boolean validName(String str) {
-
-        String[] s = str.split("[\\p{Punct}\\s]+");
-        if (s.length > 2) return false;
-        return true;
-    }
-
-    private static boolean validAddress(String str) {
-        return true;
-    }
-
-    private static boolean validTelefon(String tel) {
-        String[] s = tel.split("[\\p{Punct}\\s]+");
-        if (tel.charAt(0) == '+' && s.length == 2) return true;
-        if (tel.charAt(0) != '0') return false;
-        if (s.length != 1) return false;
-        return true;
     }
 
 
@@ -95,8 +60,8 @@ public class Contact {
     public boolean equals(Object obj) {
         if (!(obj instanceof Contact)) return false;
         Contact o = (Contact) obj;
-        if (Name.equals(o.Name) && Address.equals(o.Address) &&
-                Telefon.equals(o.Telefon))
+        if (name.equals(o.name) && address.equals(o.address) &&
+                telefon.equals(o.telefon))
             return true;
         return false;
     }

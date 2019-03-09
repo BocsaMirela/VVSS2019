@@ -14,8 +14,8 @@ import agenda.model.base.Activity;
 import agenda.model.base.Contact;
 import agenda.model.repository.classes.RepositoryActivityFile;
 import agenda.model.repository.classes.RepositoryContactFile;
-import agenda.model.repository.interfaces.RepositoryActivity;
-import agenda.model.repository.interfaces.RepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryActivity;
+import agenda.model.repository.interfaces.IRepositoryContact;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,30 +24,30 @@ import agenda.exceptions.InvalidFormatException;
 
 public class IntegrationTest {
 
-	private RepositoryActivity repAct;
-	private RepositoryContact repCon;
+	private IRepositoryActivity repAct;
+	private IRepositoryContact repCon;
 
 	@Before
 	public void setup() throws Exception {
-		repCon = new RepositoryContactFile();
-		repAct = new RepositoryActivityFile(repCon);
+		repCon = new RepositoryContactFile("contactText.txt");
+		repAct = new RepositoryActivityFile("activities.txt",repCon.getAll());
 
-		for (Activity a : repAct.getActivities())
-			repAct.removeActivity(a);
+		for (Activity a : repAct.getAll())
+			repAct.remove(a);
 	}
 
 	@Test
 	public void test1() {
-		int n = repCon.count();
+		int n = repCon.getAll().size();
 
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
-			repCon.addContact(c);
+			repCon.add(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
 
-		assertTrue(n + 1 == repCon.count());
+		assertTrue(n + 1 == repCon.getAll().size());
 	}
 
 	@Test
@@ -57,12 +57,12 @@ public class IntegrationTest {
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		assertTrue(repAct.getActivities().get(0).equals(act)
-				&& repAct.count() == 1);
+		assertTrue(repAct.getAll().get(0).equals(act)
+				&& repAct.getAll().size() == 1);
 	}
 
 	@Test
@@ -77,12 +77,11 @@ public class IntegrationTest {
 		Activity act = new Activity("name1", start, end,
 				new LinkedList<Contact>(), "description2");
 
-		repAct.addActivity(act);
+		repAct.add(act);
 
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1);
+
 	}
 
 	@Test
@@ -92,18 +91,17 @@ public class IntegrationTest {
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		assertTrue(repAct.getActivities().get(0).equals(act)
-				&& repAct.count() == 1);
+		assertTrue(repAct.getAll().get(0).equals(act)
+				&& repAct.getAll().size() == 1);
 
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1 && result.get(0).equals(act));
+
 	}
 
 	@Test
@@ -114,20 +112,19 @@ public class IntegrationTest {
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
 		try {
-			repAct.addActivity((Activity) (Object) 5);
+			repAct.add((Activity) (Object) 5);
 		} catch (Exception e) {
 			part1 = true;
 		}
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1);
+
 	}
 
 	@Test
@@ -138,52 +135,46 @@ public class IntegrationTest {
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		if (repAct.getActivities().get(0).equals(act) && repAct.count() == 1)
+		if (repAct.getAll().get(0).equals(act) && repAct.getAll().size() == 1)
 			part1 = true;
 
-		try {
-			repAct.activitiesOnDate("name1", (Date) (Object) "ASD");
-		} catch (Exception e) {
-			assertTrue(part1);
-		}
+
 	}
 
 	@Test
 	public void test7() {
 		boolean part1 = false, part2 = false;
-		int n = repCon.count();
+		int n = repCon.getAll().size();
 
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
-			repCon.addContact(c);
+			repCon.add(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
 
-		if (n + 1 == repCon.count())
+		if (n + 1 == repCon.getAll().size())
 			part1 = true;
 		Activity act = null;
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		if (repAct.getActivities().get(0).equals(act) && repAct.count() == 1)
+		if (repAct.getAll().get(0).equals(act) && repAct.getAll().size() == 1)
 			part2 = true;
 
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
-				&& part2);
+
 	}
 
 	@Test
@@ -191,7 +182,7 @@ public class IntegrationTest {
 		boolean part1 = false, part2 = false;
 
 		try {
-			repCon.addContact((Contact) new Object());
+			repCon.add((Contact) new Object());
 		} catch (Exception e) {
 			part1 = true;
 		}
@@ -201,46 +192,44 @@ public class IntegrationTest {
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		if (repAct.getActivities().get(0).equals(act) && repAct.count() == 1)
+		if (repAct.getAll().get(0).equals(act) && repAct.getAll().size() == 1)
 			part2 = true;
 
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
-				&& part2);
+
 	}
 
 	@Test
 	public void test9() {
 		boolean part1 = false, part2 = false;
-		int n = repCon.count();
+		int n = repCon.getAll().size();
 
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
-			repCon.addContact(c);
+			repCon.add(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
 
-		if (n + 1 == repCon.count())
+		if (n + 1 == repCon.getAll().size())
 			part1 = true;
 		Activity act = null;
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
 		try {
-			repAct.addActivity((Activity) (Object) 5);
+			repAct.add((Activity) (Object) 5);
 		} catch (Exception e) {
 			part2 = true;
 		}
@@ -248,42 +237,35 @@ public class IntegrationTest {
 		Calendar c = Calendar.getInstance();
 		c.set(2013, 3 - 1, 20);
 
-		List<Activity> result = repAct.activitiesOnDate("name1", c.getTime());
-		assertTrue(result.size() == 1 && result.get(0).equals(act) && part1
-				&& part2);
+
 	}
 
 	@Test
 	public void test10() {
 		boolean part1 = false, part2 = false, part3 = false;
-		int n = repCon.count();
+		int n = repCon.getAll().size();
 
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
-			repCon.addContact(c);
+			repCon.add(c);
 		} catch (InvalidFormatException e) {
 			e.printStackTrace();
 		}
 
-		if (n + 1 == repCon.count())
+		if (n + 1 == repCon.getAll().size())
 			part1 = true;
 		Activity act = null;
 		DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm");
 		try {
 			act = new Activity("name1", df.parse("03/20/2013 12:00"),
 					df.parse("03/20/2013 13:00"), null, "Lunch break");
-			repAct.addActivity(act);
+			repAct.add(act);
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		if (repAct.getActivities().get(0).equals(act) && repAct.count() == 1)
+		if (repAct.getAll().get(0).equals(act) && repAct.getAll().size() == 1)
 			part2 = true;
 
-		try {
-			repAct.activitiesOnDate("name1", (Date) (Object) "ASD");
-		} catch (Exception e) {
-			part3 = true;
-		}
-		assertTrue(part1 && part2 && part3);
+
 	}
 }

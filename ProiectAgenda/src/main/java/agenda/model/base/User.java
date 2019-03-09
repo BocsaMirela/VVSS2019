@@ -19,19 +19,13 @@ public class User {
         return username;
     }
 
-    public boolean isPassword(String password) {
-        if (this.password.equals(password)) return true;
-        else return false;
+    public String getPassword() {
+        return password;
     }
 
-    public boolean setPassword(String oldPasswd, String newPasswd) {
-        if (oldPasswd.equals(password)) {
-            password = newPasswd;
-            return true;
-        }
-        return false;
+    public void setPassword(String password){
+        this.password=password;
     }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -41,15 +35,6 @@ public class User {
         sb.append("#");
         sb.append(password);
         return sb.toString();
-    }
-
-    public static User fromString(String s) {
-        String[] str = s.split("#");
-        try {
-            return new User(str[0], str[1], str[2]);
-        } catch (Exception e) {
-            return null;
-        }
     }
 
     @Override

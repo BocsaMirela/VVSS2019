@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import agenda.model.repository.interfaces.RepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryContact;
 
 public class Activity {
     private String name;
@@ -98,22 +98,5 @@ public class Activity {
             sb.append(c.getName());
         }
         return sb.toString();
-    }
-
-    public static Activity fromString(String line, RepositoryContact repcon) {
-        try {
-            String[] str = line.split("#");
-            String name = str[0];
-            Date start = new Date(Long.parseLong(str[1]));
-            Date duration = new Date(Long.parseLong(str[2]));
-            String description = str[3];
-            List<Contact> conts = new LinkedList<Contact>();
-            for (int i = 4; i < str.length; i++) {
-                conts.add(repcon.getByName(str[i]));
-            }
-            return new Activity(name, start, duration, conts, description);
-        } catch (Exception e) {
-            return null;
-        }
     }
 }

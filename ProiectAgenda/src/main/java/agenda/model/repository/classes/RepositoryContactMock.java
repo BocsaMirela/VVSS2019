@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 import agenda.model.base.Contact;
-import agenda.model.repository.interfaces.RepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryContact;
 import agenda.exceptions.InvalidFormatException;
 
-public class RepositoryContactMock implements RepositoryContact {
+public class RepositoryContactMock implements IRepositoryContact {
 
     private List<Contact> contacts;
 
@@ -27,17 +27,18 @@ public class RepositoryContactMock implements RepositoryContact {
     }
 
     @Override
-    public List<Contact> getContacts() {
+    public List<Contact> getAll() {
         return new LinkedList<Contact>(contacts);
     }
 
     @Override
-    public void addContact(Contact contact) {
+    public boolean add(Contact contact) {
         contacts.add(contact);
+        return true;
     }
 
     @Override
-    public boolean removeContact(Contact contact) {
+    public boolean remove(Contact contact) {
         int index = contacts.indexOf(contact);
         if (index < 0) return false;
         else contacts.remove(index);
@@ -45,16 +46,18 @@ public class RepositoryContactMock implements RepositoryContact {
     }
 
     @Override
+    public boolean update(Contact item) {
+        return false;
+    }
+
     public boolean saveContracts() {
         return true;
     }
 
-    @Override
     public int count() {
         return contacts.size();
     }
 
-    @Override
     public Contact getByName(String string) {
         for (Contact c : contacts)
             if (c.getName().equals(string)) return c;

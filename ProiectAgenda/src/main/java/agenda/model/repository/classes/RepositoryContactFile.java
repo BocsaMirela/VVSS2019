@@ -11,14 +11,15 @@ import java.util.List;
 
 import agenda.exceptions.InvalidFormatException;
 import agenda.model.base.Contact;
-import agenda.model.repository.interfaces.RepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryContact;
 
-public class RepositoryContactFile implements RepositoryContact {
+public class RepositoryContactFile implements IRepositoryContact {
 
-    private static final String filename = "D:\\VVSS2019\\ProiectAgenda\\files\\contacts.txt";
+    private String filename;
     private List<Contact> contacts;
 
-    public RepositoryContactFile() throws Exception {
+    public RepositoryContactFile(String filename) throws Exception {
+        this.filename = filename;
         contacts = new LinkedList<Contact>();
         BufferedReader br = null;
 //		String currentDir = new File(".").getAbsolutePath();
@@ -31,7 +32,13 @@ public class RepositoryContactFile implements RepositoryContact {
             while ((line = br.readLine()) != null) {
                 Contact c = null;
                 try {
-                    c = Contact.fromString(line, " ");
+                    String[] s = line.split("#");
+                    if (s.length != 4) throw new InvalidFormatException("Cannot convert", "Invalid data");
+                    if (!validTelefon(s[2])) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
+                    if (!validName(s[0])) throw new InvalidFormatException("Cannot convert", "Invalid name");
+                    if (!validAddress(s[1])) throw new InvalidFormatException("Cannot convert", "Invalid address");
+
+                    c = new Contact(s[0], s[1], s[2]);
                 } catch (InvalidFormatException e) {
                     throw new Exception("Error in file at line " + i,
                             new Throwable(e.getCause().getMessage()));
@@ -48,17 +55,29 @@ public class RepositoryContactFile implements RepositoryContact {
     }
 
     @Override
-    public List<Contact> getContacts() {
+    public List<Contact> getAll() {
         return new LinkedList<Contact>(contacts);
     }
 
     @Override
-    public void addContact(Contact contact) {
-        contacts.add(contact);
+    public boolean add(Contact contact) {
+        try {
+            if (!validTelefon(contact.getTelefon()))
+                throw new InvalidFormatException("Cannot convert", "Invalid phone number");
+            if (!validName(contact.getName())) throw new InvalidFormatException("Cannot convert", "Invalid name");
+            if (!validAddress(contact.getAddress()))
+                throw new InvalidFormatException("Cannot convert", "Invalid address");
+            contacts.add(contact);
+            saveContracts();
+            return true;
+        }catch (InvalidFormatException ex) {
+            return false;
+        }
+
     }
 
     @Override
-    public boolean removeContact(Contact contact) {
+    public boolean remove(Contact contact) {
         int index = contacts.indexOf(contact);
         if (index < 0)
             return false;
@@ -68,7 +87,11 @@ public class RepositoryContactFile implements RepositoryContact {
     }
 
     @Override
-    public boolean saveContracts() {
+    public boolean update(Contact item) {
+        return false;
+    }
+
+    private boolean saveContracts() {
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(new FileOutputStream(filename));
@@ -82,17 +105,23 @@ public class RepositoryContactFile implements RepositoryContact {
         return true;
     }
 
-    @Override
-    public int count() {
-        return contacts.size();
+    private static boolean validName(String str) {
+
+        String[] s = str.split("[\\p{Punct}\\s]+");
+        if (s.length > 2) return false;
+        return true;
     }
 
-    @Override
-    public Contact getByName(String string) {
-        for (Contact c : contacts)
-            if (c.getName().equals(string))
-                return c;
-        return null;
+    private static boolean validAddress(String str) {
+        return true;
+    }
+
+    private static boolean validTelefon(String tel) {
+        String[] s = tel.split("[\\p{Punct}\\s]+");
+        if (tel.charAt(0) == '+' && s.length == 2) return true;
+        if (tel.charAt(0) != '0') return false;
+        if (s.length != 1) return false;
+        return true;
     }
 
 }

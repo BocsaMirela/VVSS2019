@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import agenda.controller.*;
 import agenda.exceptions.InvalidFormatException;
 
 import agenda.model.base.Activity;
@@ -16,9 +17,9 @@ import agenda.model.base.User;
 import agenda.model.repository.classes.RepositoryActivityFile;
 import agenda.model.repository.classes.RepositoryContactFile;
 import agenda.model.repository.classes.RepositoryUserFile;
-import agenda.model.repository.interfaces.RepositoryActivity;
-import agenda.model.repository.interfaces.RepositoryContact;
-import agenda.model.repository.interfaces.RepositoryUser;
+import agenda.model.repository.interfaces.IRepositoryActivity;
+import agenda.model.repository.interfaces.IRepositoryContact;
+import agenda.model.repository.interfaces.IRepositoryUser;
 
 //functionalitati
 //F01.	 adaugarea de contacte (nume, adresa, numar de telefon, adresa email);
@@ -29,11 +30,19 @@ public class MainClass {
 
     public static void main(String[] args) {
         BufferedReader in = null;
-        try {
-            RepositoryContact contactRep = new RepositoryContactFile();
-            RepositoryUser userRep = new RepositoryUserFile();
-            RepositoryActivity activityRep = new RepositoryActivityFile(contactRep);
+        final String filenameActivity = "D:\\VVSS2019\\ProiectAgenda\\files\\activities.txt";
+        final String filenameContact = "D:\\VVSS2019\\ProiectAgenda\\files\\contacts.txt";
+        final String filenameUser = "D:\\VVSS2019\\ProiectAgenda\\files\\users.txt";
 
+
+        try {
+            IRepositoryContact contactRep = new RepositoryContactFile(filenameContact);
+            IRepositoryUser userRep = new RepositoryUserFile(filenameUser);
+            IRepositoryActivity activityRep = new RepositoryActivityFile(filenameActivity, contactRep.getAll());
+
+            IControllerActivity controllerActivity = new ControllerActivity(activityRep);
+            IControllerContact controllerContact = new ControllerContact(contactRep);
+            IControllerUser controllerUser = new ControllerUser(userRep);
             User user = null;
             in = new BufferedReader(new InputStreamReader(System.in));
             while (user == null) {
@@ -42,8 +51,8 @@ public class MainClass {
                 System.out.printf("Enter password: ");
                 String p = in.readLine();
 
-                user = userRep.getByUsername(u);
-                if (!user.isPassword(p))
+                user = controllerUser.getByUsername(u);
+                if (!controllerUser.checkPassword(p))
                     user = null;
             }
 
@@ -54,13 +63,13 @@ public class MainClass {
                 try {
                     switch (chosen) {
                         case 1:
-                            adaugContact(contactRep, in);
+                            adaugContact(controllerContact, in);
                             break;
                         case 2:
-                            adaugActivitate(activityRep, contactRep, in, user);
+                            adaugActivitate(controllerActivity, in, user);
                             break;
                         case 3:
-                            afisActivitate(activityRep, in, user);
+                            afisActivitate(controllerActivity, in, user);
                             break;
                     }
                 } catch (Exception e) {
@@ -78,7 +87,7 @@ public class MainClass {
         System.out.println("Program over and out\n");
     }
 
-    private static void afisActivitate(RepositoryActivity activityRep,
+    private static void afisActivitate(IControllerActivity controllerActivity,
                                        BufferedReader in, User user) {
         try {
             System.out.printf("Afisare Activitate: \n");
@@ -92,12 +101,9 @@ public class MainClass {
 
             System.out.println("Activitatile din ziua " + d.toString() + ": ");
 
-            List<Activity> act = activityRep
-                    .activitiesOnDate(user.getName(), d);
+            List<Activity> act = controllerActivity.activitiesOnDate(user.getName(), d);
             for (Activity a : act) {
-                System.out.printf("%s - %s: %s - %s with: ", a.getStart()
-                        .toString(), a.getDuration().toString(), a
-                        .getDescription());
+                System.out.printf("%s - %s: %s - %s with: ", a.getStart().toString(), a.getDuration().toString(), a.getDescription());
                 for (Contact con : a.getContacts())
                     System.out.printf("%s, ", con.getName());
                 System.out.println();
@@ -107,7 +113,7 @@ public class MainClass {
         }
     }
 
-    private static void adaugActivitate(RepositoryActivity activityRep, RepositoryContact contactRep, BufferedReader in, User user) {
+    private static void adaugActivitate(IControllerActivity controllerActivity, BufferedReader in, User user) {
         try {
             System.out.printf("Adauga Activitate: \n");
             System.out.printf("Descriere: ");
@@ -139,7 +145,7 @@ public class MainClass {
             Activity act = new Activity(user.getName(), start, end,
                     new LinkedList<Contact>(), description);
 
-            activityRep.addActivity(act);
+            controllerActivity.save(act);
 
             System.out.printf("S-a adugat cu succes\n");
         } catch (IOException e) {
@@ -148,7 +154,7 @@ public class MainClass {
 
     }
 
-    private static void adaugContact(RepositoryContact contactRep, BufferedReader in) {
+    private static void adaugContact(IControllerContact controllerContact, BufferedReader in) {
 
         try {
             System.out.printf("Adauga Contact: \n");
@@ -161,7 +167,7 @@ public class MainClass {
 
             Contact c = new Contact(name, adress, telefon);
 
-            contactRep.addContact(c);
+            controllerContact.save(c);
 
             System.out.print("S-a adugat cu succes\n");
         } catch (IOException e) {
