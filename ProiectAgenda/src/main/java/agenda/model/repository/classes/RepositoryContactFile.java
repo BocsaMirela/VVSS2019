@@ -33,18 +33,19 @@ public class RepositoryContactFile implements IRepositoryContact {
                 Contact c = null;
                 try {
                     String[] s = line.split("#");
-                    if (s.length != 4) throw new InvalidFormatException("Cannot convert", "Invalid data");
+                    if (s.length != 3) throw new InvalidFormatException("Cannot convert", "Invalid data");
                     if (!validTelefon(s[2])) throw new InvalidFormatException("Cannot convert", "Invalid phone number");
                     if (!validName(s[0])) throw new InvalidFormatException("Cannot convert", "Invalid name");
                     if (!validAddress(s[1])) throw new InvalidFormatException("Cannot convert", "Invalid address");
 
                     c = new Contact(s[0], s[1], s[2]);
+                    contacts.add(c);
+                    i++;
                 } catch (InvalidFormatException e) {
                     throw new Exception("Error in file at line " + i,
                             new Throwable(e.getCause().getMessage()));
                 }
-                contacts.add(c);
-                i++;
+
             }
         } catch (IOException e) {
             // TODO Auto-generated catch block

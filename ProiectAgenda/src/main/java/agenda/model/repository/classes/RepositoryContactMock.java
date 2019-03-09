@@ -20,7 +20,7 @@ public class RepositoryContactMock implements IRepositoryContact {
             contacts.add(c);
             c = new Contact("Name3", "address 3", "+4071122338866");
             contacts.add(c);
-        } catch (InvalidFormatException e) {
+        } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

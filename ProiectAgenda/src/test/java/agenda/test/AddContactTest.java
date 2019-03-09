@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import agenda.exceptions.InvalidFormatException;
 
 import agenda.model.base.Contact;
 import agenda.model.repository.classes.RepositoryContactMock;
@@ -27,7 +26,7 @@ public class AddContactTest {
 	{
 		try {
 			con = new Contact("name", "address1", "+4071122334455");
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			assertTrue(false);
 		}
 		//int n = rep.count();
@@ -62,7 +61,7 @@ public class AddContactTest {
 		try {
 			con = new Contact("name", "address1", "+071122334455");
 			rep.add(con);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			assertTrue(false);
 		}
 		int n  = rep.getAll().size();

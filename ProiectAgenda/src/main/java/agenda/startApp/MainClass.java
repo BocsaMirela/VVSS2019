@@ -172,7 +172,7 @@ public class MainClass {
             System.out.print("S-a adugat cu succes\n");
         } catch (IOException e) {
             System.out.printf("Eroare de citire: %s\n" + e.getMessage());
-        } catch (InvalidFormatException e) {
+        } catch (Exception e) {
             if (e.getCause() != null)
                 System.out.printf("Eroare: %s - %s\n" + e.getMessage(), e
                         .getCause().getMessage());

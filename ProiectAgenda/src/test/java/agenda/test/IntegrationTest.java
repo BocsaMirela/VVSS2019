@@ -20,7 +20,6 @@ import agenda.model.repository.interfaces.IRepositoryContact;
 import org.junit.Before;
 import org.junit.Test;
 
-import agenda.exceptions.InvalidFormatException;
 
 public class IntegrationTest {
 
@@ -43,7 +42,7 @@ public class IntegrationTest {
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
 			repCon.add(c);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -153,7 +152,7 @@ public class IntegrationTest {
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
 			repCon.add(c);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -213,7 +212,7 @@ public class IntegrationTest {
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
 			repCon.add(c);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
@@ -248,7 +247,7 @@ public class IntegrationTest {
 		try {
 			Contact c = new Contact("name", "address1", "+071122334455");
 			repCon.add(c);
-		} catch (InvalidFormatException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
