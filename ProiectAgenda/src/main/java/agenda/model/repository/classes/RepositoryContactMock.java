@@ -50,18 +50,4 @@ public class RepositoryContactMock implements IRepositoryContact {
         return false;
     }
 
-    public boolean saveContracts() {
-        return true;
-    }
-
-    public int count() {
-        return contacts.size();
-    }
-
-    public Contact getByName(String string) {
-        for (Contact c : contacts)
-            if (c.getName().equals(string)) return c;
-        return null;
-    }
-
 }

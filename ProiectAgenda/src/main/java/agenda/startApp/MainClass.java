@@ -154,6 +154,9 @@ public class MainClass {
 
     }
 
+    /*
+    Citeste datele de la tastatura si adauga un nou contact
+     */
     private static void adaugContact(IControllerContact controllerContact, BufferedReader in) {
 
         try {
@@ -165,9 +168,7 @@ public class MainClass {
             System.out.printf("Numar de telefon: ");
             String telefon = in.readLine();
 
-            Contact c = new Contact(name, adress, telefon);
-
-            controllerContact.save(c);
+            controllerContact.save(name, adress, telefon);
 
             System.out.print("S-a adugat cu succes\n");
         } catch (IOException e) {

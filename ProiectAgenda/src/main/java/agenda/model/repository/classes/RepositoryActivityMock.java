@@ -83,27 +83,4 @@ public class RepositoryActivityMock implements IRepositoryActivity {
         return false;
     }
 
-    public boolean saveActivities() {
-        return true;
-    }
-
-    public int count() {
-        return activities.size();
-    }
-
-    public List<Activity> activitiesByName(String name) {
-        List<Activity> result = new LinkedList<Activity>();
-        for (Activity a : activities)
-            if (a.getName().equals(name)) result.add(a);
-        return result;
-    }
-
-    public List<Activity> activitiesOnDate(String name, Date d) {
-        List<Activity> result = new LinkedList<Activity>();
-        for (Activity a : activities)
-            if (a.getName().equals(name))
-                if (a.getStart().compareTo(d) <= 0 && d.compareTo(a.getDuration()) <= 0) result.add(a);
-        return result;
-    }
-
 }

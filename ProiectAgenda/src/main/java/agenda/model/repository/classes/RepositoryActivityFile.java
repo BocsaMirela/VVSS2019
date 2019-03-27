@@ -85,7 +85,7 @@ public class RepositoryActivityFile implements IRepositoryActivity {
         return true;
     }
 
-    public boolean saveActivities() {
+    private boolean saveActivities() {
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(new FileOutputStream(filename));
@@ -104,14 +104,14 @@ public class RepositoryActivityFile implements IRepositoryActivity {
         return false;
     }
 
-    public Contact getByName(String name, List<Contact> listOfContact){
+    private Contact getByName(String name, List<Contact> listOfContact){
         for (Contact c:listOfContact){
             if(c.getName().equals(name)) return c;
         }
         return null;
     }
 
-    public Activity fromString(String line, List<Contact> listOfContact) {
+    private Activity fromString(String line, List<Contact> listOfContact) {
         try {
             String[] str = line.split("#");
             String name = str[0];
