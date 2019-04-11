@@ -1,9 +1,7 @@
 package agenda.controller;
 
 import agenda.model.base.User;
-import agenda.model.repository.interfaces.IRepositoryUser;
-
-import javax.jws.soap.SOAPBinding;
+import agenda.repository.interfaces.IRepositoryUser;
 
 public class ControllerUser implements IControllerUser{
 

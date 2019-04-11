@@ -9,10 +9,10 @@
 //
 //import agenda.model.base.Activity;
 //import agenda.model.base.Contact;
-//import agenda.model.repository.classes.RepositoryActivityFile;
-//import agenda.model.repository.classes.RepositoryContactFile;
-//import agenda.model.repository.interfaces.IRepositoryActivity;
-//import agenda.model.repository.interfaces.IRepositoryContact;
+//import RepositoryActivityFile;
+//import RepositoryContactFile;
+//import IRepositoryActivity;
+//import IRepositoryContact;
 //
 //import org.junit.Before;
 //import org.junit.Test;

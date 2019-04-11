@@ -8,8 +8,8 @@
 //import java.text.SimpleDateFormat;
 //
 //import agenda.model.base.Activity;
-//import agenda.model.repository.classes.RepositoryActivityMock;
-//import agenda.model.repository.interfaces.IRepositoryActivity;
+//import RepositoryActivityMock;
+//import IRepositoryActivity;
 //
 //import org.junit.Before;
 //import org.junit.Test;

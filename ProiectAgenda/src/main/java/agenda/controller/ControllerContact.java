@@ -2,7 +2,7 @@ package agenda.controller;
 
 import agenda.exceptions.InvalidFormatException;
 import agenda.model.base.Contact;
-import agenda.model.repository.interfaces.IRepositoryContact;
+import agenda.repository.interfaces.IRepositoryContact;
 
 import java.util.List;
 

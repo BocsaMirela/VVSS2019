@@ -4,8 +4,6 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-import agenda.model.repository.interfaces.IRepositoryContact;
-
 public class Activity {
     private String name;
     private Date start;

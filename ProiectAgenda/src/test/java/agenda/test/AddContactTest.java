@@ -7,8 +7,8 @@
 //
 //
 //import agenda.model.base.Contact;
-//import agenda.model.repository.classes.RepositoryContactMock;
-//import agenda.model.repository.interfaces.IRepositoryContact;
+//import RepositoryContactMock;
+//import IRepositoryContact;
 //
 //
 //public class AddContactTest {

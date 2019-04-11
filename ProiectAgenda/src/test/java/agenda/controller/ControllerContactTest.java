@@ -2,8 +2,8 @@ package agenda.controller;
 
 import agenda.exceptions.InvalidFormatException;
 import agenda.model.base.Contact;
-import agenda.model.repository.classes.RepositoryContactFile;
-import agenda.model.repository.interfaces.IRepositoryContact;
+import agenda.repository.classes.RepositoryContactFile;
+import agenda.repository.interfaces.IRepositoryContact;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

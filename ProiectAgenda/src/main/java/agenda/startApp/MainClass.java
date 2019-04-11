@@ -9,17 +9,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 import agenda.controller.*;
-import agenda.exceptions.InvalidFormatException;
 
 import agenda.model.base.Activity;
 import agenda.model.base.Contact;
 import agenda.model.base.User;
-import agenda.model.repository.classes.RepositoryActivityFile;
-import agenda.model.repository.classes.RepositoryContactFile;
-import agenda.model.repository.classes.RepositoryUserFile;
-import agenda.model.repository.interfaces.IRepositoryActivity;
-import agenda.model.repository.interfaces.IRepositoryContact;
-import agenda.model.repository.interfaces.IRepositoryUser;
+import agenda.repository.classes.RepositoryActivityFile;
+import agenda.repository.classes.RepositoryContactFile;
+import agenda.repository.classes.RepositoryUserFile;
+import agenda.repository.interfaces.IRepositoryActivity;
+import agenda.repository.interfaces.IRepositoryContact;
+import agenda.repository.interfaces.IRepositoryUser;
 
 //functionalitati
 //F01.	 adaugarea de contacte (nume, adresa, numar de telefon, adresa email);

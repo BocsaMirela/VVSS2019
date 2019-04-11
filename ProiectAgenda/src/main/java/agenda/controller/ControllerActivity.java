@@ -1,7 +1,7 @@
 package agenda.controller;
 
 import agenda.model.base.Activity;
-import agenda.model.repository.interfaces.IRepositoryActivity;
+import agenda.repository.interfaces.IRepositoryActivity;
 
 import java.util.Date;
 import java.util.LinkedList;
