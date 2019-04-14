@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +205,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="949" />
+    <option name="x" value="-11" />
     <option name="width" value="980" />
     <option name="height" value="1031" />
   </component>
@@ -328,7 +326,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554991975872" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555270255172" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
@@ -488,14 +486,11 @@
       <workItem from="1554970734955" duration="14179000" />
       <workItem from="1555264753185" duration="453000" />
       <workItem from="1555265341091" duration="596000" />
-      <workItem from="1555267547930" duration="2102000" />
+      <workItem from="1555267547930" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestActivityRepo - 2019.04.11 at 16h 44m 27s.xml">
-      <configuration name="TestActivityRepo" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RepositoryActivityFileTest - 2019.04.11 at 16h 46m 13s.xml">
       <configuration name="RepositoryActivityFileTest" configurationId="JUnit" />
     </history-entry>
@@ -523,15 +518,17 @@
     <history-entry file="RepositoryActivityFileTest - 2019.04.11 at 16h 56m 48s.xml">
       <configuration name="RepositoryActivityFileTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RepositoryActivityFileTest - 2019.04.14 at 22h 21m 08s.xml">
+      <configuration name="RepositoryActivityFileTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51417000" />
+    <option name="totallyTimeSpent" value="51804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.024291499" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05059022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,7 +537,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4979757" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.17297298" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.17477478" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.1545293" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -560,7 +557,7 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.51096123" />
+      <window_info active="true" anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.11973018" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
