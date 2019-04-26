@@ -37,7 +37,6 @@ public class RepositoryActivityFile implements IRepositoryActivity {
             }
         } catch (IOException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
         } finally {
             if (br != null) br.close();
         }

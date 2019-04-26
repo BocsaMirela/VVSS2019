@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ControllerActivity implements IControllerActivity{
+public class ControllerActivity implements IControllerActivity {
 
     private IRepositoryActivity repositoryActivity;
 
@@ -63,11 +63,12 @@ public class ControllerActivity implements IControllerActivity{
         }
         return result;
     }
-    public void save(Activity activity){
+
+    public void save(Activity activity) {
         repositoryActivity.add(activity);
     }
 
-    public List<Activity> getAllActivities(){
+    public List<Activity> getAllActivities() {
         return repositoryActivity.getAll();
     }
 }

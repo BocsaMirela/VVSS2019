@@ -46,7 +46,6 @@ public class RepositoryContactFile implements IRepositoryContact {
             }
         } catch (IOException e) {
             // TODO Auto-generated catch block
-            e.printStackTrace();
         } finally {
             if (br != null) br.close();
         }
