@@ -1,4 +1,4 @@
-package repositoryTest;
+package agenda;
 
 import agenda.model.base.Activity;
 import agenda.model.base.Contact;
