@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/controller/ControllerContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agenda/controller/ControllerContactTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -297,7 +295,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556382093771" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556386623568" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
@@ -344,27 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TopDownIntegration">
-    <configuration name="BigBangIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProiectAgenda" />
-      <extension name="coverage" track_test_folders="true" runner="jacoco">
-        <pattern>
-          <option name="PATTERN" value="agenda.repository.classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agenda" />
-      <option name="MAIN_CLASS_NAME" value="agenda.BigBangIntegration" />
-      <option name="METHOD_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <dir value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ControllerContactTest">
     <configuration name="BigBangIntegration.testUnitC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProiectAgenda" />
       <extension name="coverage" track_test_folders="true" runner="jacoco">
@@ -377,6 +355,26 @@
       <option name="MAIN_CLASS_NAME" value="agenda.BigBangIntegration" />
       <option name="METHOD_NAME" value="testUnitC" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <dir value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProiectAgenda" />
+      <extension name="coverage" track_test_folders="true" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="agenda.repository.classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agenda.controller" />
+      <option name="MAIN_CLASS_NAME" value="agenda.controller.ControllerContactTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
@@ -468,19 +466,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BigBangIntegration" />
       <item itemvalue="JUnit.TopDownIntegration" />
       <item itemvalue="JUnit.BigBangIntegration.testUnitC" />
       <item itemvalue="JUnit.TopDownIntegration.testIntegrationPA" />
       <item itemvalue="JUnit.TopDownIntegration.testIntegrationPAB" />
+      <item itemvalue="JUnit.ControllerContactTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ControllerContactTest" />
         <item itemvalue="JUnit.TopDownIntegration" />
         <item itemvalue="JUnit.TopDownIntegration.testIntegrationPAB" />
         <item itemvalue="JUnit.TopDownIntegration.testIntegrationPA" />
         <item itemvalue="JUnit.BigBangIntegration.testUnitC" />
-        <item itemvalue="JUnit.BigBangIntegration" />
       </list>
     </recent_temporary>
   </component>
@@ -512,7 +510,7 @@
       <workItem from="1555267547930" duration="3004000" />
       <workItem from="1555304850730" duration="438000" />
       <workItem from="1556291472638" duration="8486000" />
-      <workItem from="1556376914120" duration="4450000" />
+      <workItem from="1556376914120" duration="5029000" />
     </task>
     <servers />
   </component>
@@ -549,7 +547,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65693000" />
+    <option name="totallyTimeSpent" value="66272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />

@@ -3,6 +3,7 @@ package agenda.controller;
 import agenda.exceptions.InvalidFormatException;
 import agenda.model.base.Contact;
 import agenda.repository.classes.RepositoryContactFile;
+import agenda.repository.classes.RepositoryContactMock;
 import agenda.repository.interfaces.IRepositoryContact;
 import org.junit.After;
 import org.junit.Before;
@@ -16,8 +17,7 @@ public class ControllerContactTest {
 
     @Before
     public void setUp() throws Exception {
-        final String filenameContact = "D:\\VVSS2019\\ProiectAgenda\\src\\test\\java\\resources\\contactsTest.txt";
-        IRepositoryContact contactRep = new RepositoryContactFile(filenameContact);
+        IRepositoryContact contactRep = new RepositoryContactMock();
         controllerContact = new ControllerContact(contactRep);
     }
 
