@@ -289,7 +289,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556386634284" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556386760148" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
@@ -509,9 +509,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BigBangIntegration_testUnitC - 2019.04.26 at 23h 46m 11s.xml">
-      <configuration name="BigBangIntegration.testUnitC" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BigBangIntegration - 2019.04.26 at 23h 47m 01s.xml">
       <configuration name="BigBangIntegration" configurationId="JUnit" />
     </history-entry>
@@ -538,6 +535,9 @@
     </history-entry>
     <history-entry file="TopDownIntegration - 2019.04.27 at 00h 15m 37s.xml">
       <configuration name="TopDownIntegration" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerContactTest - 2019.04.27 at 20h 37m 10s.xml">
+      <configuration name="ControllerContactTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
