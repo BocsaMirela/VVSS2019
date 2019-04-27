@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repositoryTest/RepositoryActivityFileTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/agenda/RepositoryActivityFileTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="28" />
+            <state>
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,17 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/BigBangIntegration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="39" column="72" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
+            <state relative-caret-position="204">
+              <caret line="100" column="35" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1386">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="238">
+              <caret line="151" column="35" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -209,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-11" />
     <option name="width" value="797" />
     <option name="height" value="1031" />
@@ -230,113 +230,7 @@
             <path>
               <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="filesTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="startApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProiectAgenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProiectAgenda" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repositoryTest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,7 +243,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556379709481" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556382012731" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
@@ -362,6 +256,15 @@
       <recent name="agenda.controller" />
       <recent name="agenda.model.repository.classes" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java\agenda" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="agenda" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="agenda" />
       <recent name="agenda.controller" />
@@ -372,12 +275,6 @@
       <recent name="D:\VVSS2019\ProiectAgenda" />
       <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java\agenda" />
       <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\VVSS2019\ProiectAgenda\3-ProiectAgenda\ProiectAgenda\src\main\java\agenda" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -560,7 +457,7 @@
       <workItem from="1555267547930" duration="3004000" />
       <workItem from="1555304850730" duration="438000" />
       <workItem from="1556291472638" duration="8486000" />
-      <workItem from="1556376914120" duration="2217000" />
+      <workItem from="1556376914120" duration="4185000" />
     </task>
     <servers />
   </component>
@@ -597,13 +494,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63460000" />
+    <option name="totallyTimeSpent" value="65428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="531" height="687" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31422505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17894737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -648,7 +544,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/repositoryTest/RepositoryActivityFileTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/agenda/RepositoryActivityFileTest.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="4" />
@@ -1369,13 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/BigBangIntegration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="39" column="72" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1397,13 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1386">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1417,13 +1299,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/repositoryTest/RepositoryActivityFileTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/RepositoryActivityFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="28" />
+        <state>
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/BigBangIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="100" column="35" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="151" column="35" selection-start-line="151" selection-start-column="16" selection-end-line="151" selection-end-column="35" />
         </state>
       </provider>
     </entry>
