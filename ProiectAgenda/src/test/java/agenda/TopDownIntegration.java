@@ -38,7 +38,7 @@ public class TopDownIntegration {
         repositoryActivity = new RepositoryActivityFile("", new ArrayList<Contact>());
         controllerActivity = new ControllerActivity(repositoryActivity);
     }
-    
+
     //test module A - F01 - unit testing
     @Test
     public void testUnitA() throws Exception {

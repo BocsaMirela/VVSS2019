@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb997fe9-9a88-40fd-a39a-98756bab68cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Docs/Lab03/Lab03_WBT_TCs_Form.xls" beforeDir="false" afterPath="$PROJECT_DIR$/../Docs/Lab03/Lab03_WBT_TCs_Form.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Docs/Lab01/~$quirementsAgenda_v2.0.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filesTest/activitiesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filesTest/activitiesTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filesTest/contactsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filesTest/contactsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/controller/ControllerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenda/controller/ControllerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryActivityFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryActivityFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,18 +40,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/repositoryTest/RepositoryActivityFileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/filesTest/activitiesTest.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -68,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerContactTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="153">
               <caret line="18" column="31" selection-start-line="18" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryActivityFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
+            <state relative-caret-position="255">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
@@ -89,30 +73,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/BigBangIntegration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="39" column="72" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1496">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-              <folding>
-                <element signature="e#4089#4098#0" expanded="true" />
-                <element signature="e#5430#5439#0" expanded="true" />
-                <element signature="e#3491#3500#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="39" column="72" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1386">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
+            <state relative-caret-position="629">
               <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
@@ -121,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AfisActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
+            <state relative-caret-position="527">
               <caret line="31" column="19" selection-end-line="105" />
             </state>
           </provider>
@@ -130,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerActivityTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="31" column="138" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="138" />
+            <state relative-caret-position="255">
+              <caret line="31" column="138" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="138" />
             </state>
           </provider>
         </entry>
@@ -223,9 +207,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -355,14 +339,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556314976236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556317277048" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/agenda/repository/classes" />
@@ -573,6 +557,7 @@
       <workItem from="1555267547930" duration="3004000" />
       <workItem from="1555304850730" duration="438000" />
       <workItem from="1556291472638" duration="8486000" />
+      <workItem from="1556376914120" duration="602000" />
     </task>
     <servers />
   </component>
@@ -609,13 +594,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61243000" />
+    <option name="totallyTimeSpent" value="61845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22834007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23238866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -624,7 +609,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4979757" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.25932506" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.25932506" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49959514" weight="0.27886322" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -714,13 +699,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/files/users.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenda/gui/models/TableModelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1375,37 +1353,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AfisActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="31" column="19" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/repositoryTest/RepositoryActivityFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="136">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerContactTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="31" selection-start-line="18" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="31" column="138" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="138" />
         </state>
       </provider>
     </entry>
@@ -1415,38 +1369,60 @@
     <entry file="file://$PROJECT_DIR$/filesTest/contactsTest.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerContactTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="153">
+          <caret line="18" column="31" selection-start-line="18" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryActivityFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
+        <state relative-caret-position="255">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/BigBangIntegration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="39" column="72" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
+        <state relative-caret-position="272">
+          <caret line="39" column="72" selection-start-line="36" selection-start-column="7" selection-end-line="39" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenda/repository/classes/RepositoryContactFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/test/AfisActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="19" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/agenda/controller/ControllerActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="138" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="138" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/agenda/TopDownIntegration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1496">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-          <folding>
-            <element signature="e#4089#4098#0" expanded="true" />
-            <element signature="e#5430#5439#0" expanded="true" />
-            <element signature="e#3491#3500#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1386">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
