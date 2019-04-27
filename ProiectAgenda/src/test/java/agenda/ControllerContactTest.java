@@ -1,5 +1,7 @@
-package agenda.controller;
+package agenda;
 
+import agenda.controller.ControllerContact;
+import agenda.controller.IControllerContact;
 import agenda.exceptions.InvalidFormatException;
 import agenda.model.base.Contact;
 import agenda.repository.classes.RepositoryContactFile;
