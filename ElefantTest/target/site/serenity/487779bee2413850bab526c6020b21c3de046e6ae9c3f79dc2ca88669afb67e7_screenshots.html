@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b73ab2df35cd94b5317e6d6bfdb3d2310ff26862ef2f19989342051d05f64b83.html">Search</a></span>
+                > <span class="truncate-60"><a
+                    href="487779bee2413850bab526c6020b21c3de046e6ae9c3f79dc2ca88669afb67e7.html">Searching by empty string </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-04-2019 00:00</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to understand a word that I don't know
+As a user
+I want to be able to look up the meaning of the word
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="f5185ee87088aa14d5d45fffbd7ec4b8f45c4a3cd42b0764995a680a7c9b5f52.html">Login Scenario Tests
+                                    (story)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Searching by empty string
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_985e0935588e792ba78ef246792836e8d2c571fef30a22e2074588aab39e9ce3.png" title="Is login page" width="960"/>
+                <img src="scaled_4622140b4908dee2ae6f6dc9d83c6cd482af1f0e0fb0c17b2f6f4134f054f170.png" title="Login steps: mirela.bocsa@x2mobile.net, 123ABC" width="960"/>
+                <img src="scaled_2024ea4fb4ac9b66aa65aacd04c72cc04e9ef690e434a0947ac8e0bceb1a4eeb.png" title="Login steps: mirela.bocsa@x2mobile.net, 123ABC" width="960"/>
+                <img src="scaled_644c837255e3585a99b2f9d9597f8b311f31601be5c3e84777fc21362a093721.png" title="Enters email: mirela.bocsa@x2mobile.net" width="960"/>
+                <img src="scaled_0228d17c0b379aacf45d9f1314b59b4747d019b971b1e25e34efb810931df134.png" title="Enters email: mirela.bocsa@x2mobile.net" width="960"/>
+                <img src="scaled_6cba7272b3075e3331b063e63d688fc6feb914b37c70479182f761b1b305b81d.png" title="Enters password: 123ABC" width="960"/>
+                <img src="scaled_65a7997e2536530c9a46075bb813bd71a18ea378c76a7f9e69972783716f9b79.png" title="Enters password: 123ABC" width="960"/>
+                <img src="scaled_ffcb3bdb5e3071142dcc6a559bcad42165b15d5570bacf11e4daa0ad4dcb3941.png" title="Login" width="960"/>
+                <img src="2024ea4fb4ac9b66aa65aacd04c72cc04e9ef690e434a0947ac8e0bceb1a4eeb.png" title="Login" width="960"/>
+                <img src="2024ea4fb4ac9b66aa65aacd04c72cc04e9ef690e434a0947ac8e0bceb1a4eeb.png" title="Should be logged: Mirela" width="960"/>
+                <img src="scaled_56a143bd0347986cc775cc8d9ef02d5991530a056834d89371fab91b7158aa5a.png" title="Is the home page" width="960"/>
+                <img src="scaled_00b73d4418752c23fb7907cea37fb3e0ceb3ff1c50be4b95b0dd6827bcb047c5.png" title="Looks for: j adore" width="960"/>
+                <img src="scaled_88d07c692b80c516d2ee8736bef777e8a51bb6a619a519457f8b14c89b3b8fad.png" title="Looks for: j adore" width="960"/>
+                <img src="00b73d4418752c23fb7907cea37fb3e0ceb3ff1c50be4b95b0dd6827bcb047c5.png" title="Enters: j adore" width="960"/>
+                <img src="scaled_48659ca91be68a2741c09abaace3fbc083c56e948794643a42e65a713619798f.png" title="Enters: j adore" width="960"/>
+                <img src="scaled_ba741164d85138fe7dc1c049ecde33b2a5a535104666cd0b46d314fc430417c1.png" title="Starts search" width="960"/>
+                <img src="scaled_8c0d8896c7f6b98a0650b15077af5af1c7bc95acea401514bbdee4febf09cad8.png" title="Starts search" width="960"/>
+                <img src="scaled_2c4277527075ea10351ee61ba52078f79bb49758e6545fccd5a9ac1b36b8cd41.png" title="Open search result page: j adore" width="960"/>
+                <img src="scaled_f96fc736981f7fd32819ec41ca3bcc81b6442b7a537f69664358b1d00f83bdaf.png" title="Open search result page: j adore" width="960"/>
+                <img src="scaled_b361f68361e9364a0ff08c62284ed7ae02e261b9d4111af6114eab02ff4c1082.png" title="Should see title: Rezultate pentru &quot;j adore" width="960"/>
+                <img src="b361f68361e9364a0ff08c62284ed7ae02e261b9d4111af6114eab02ff4c1082.png" title="Should see search content: j, adore, " width="960"/>
+                <img src="scaled_095f5283568c99a634c9edc6820718face9c7ff9924437d1d03a9d63b1f672d0.png" title="Click first element" width="960"/>
+                <img src="scaled_54ba83fe422879847f30beb54f619f4440594d19be17417fb8ff42fe91b0186f.png" title="Open element page from url: http://www.elefant.ro/cosmetice-si-parfumuri/parfumuri/apa-de-parfum/apa-de-parfum-christian-dior-j-adore-viiv-ml-pentru-femei-incolor-342250-355.html" width="960"/>
+                <img src="scaled_3fa78c1ef2350b4be0c835262067c600ea729b1de4939afbad3edc23b5d68bcb.png" title="Open element page from url: http://www.elefant.ro/cosmetice-si-parfumuri/parfumuri/apa-de-parfum/apa-de-parfum-christian-dior-j-adore-viiv-ml-pentru-femei-incolor-342250-355.html" width="960"/>
+                <img src="scaled_cc8b829a2c3c6f3a40c4d1baae6f05fb36fb5aa4040e34989b12b3f290c060df.png" title="Add to cart button click" width="960"/>
+                <img src="scaled_42011dc391c7c19a9da12bf55699a55980d54faf98c93f057cc3a1e6626e2ac4.png" title="Add to cart button click" width="960"/>
+                <img src="scaled_d1925e534b6ea40afaac59217080b6b6d624a810d5ca4a6d12334b7aa85f1237.png" title="Open cart page" width="960"/>
+                <img src="scaled_245d0954fe9848ee3f4a7efe0e605fe2c6bf065789a70789e2e93996868a6815.png" title="Open cart page" width="960"/>
+                <img src="scaled_6528f6b1fe47eb53b2a5d83d0e6f39ab573361f10ee8e7aea7f434f17b84459b.png" title="Cart number value should be: 1" width="960"/>
+                <img src="scaled_0e469d6b6bafa3d8e587f8b52b4fbf741c8b9516e0b4dda0883d560a02c3ee4b.png" title="Cart number value should be: 1: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

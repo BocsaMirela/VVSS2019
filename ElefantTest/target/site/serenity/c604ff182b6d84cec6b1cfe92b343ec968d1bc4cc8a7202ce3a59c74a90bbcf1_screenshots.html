@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b73ab2df35cd94b5317e6d6bfdb3d2310ff26862ef2f19989342051d05f64b83.html">Search</a></span>
+                > <span class="truncate-60"><a
+                    href="c604ff182b6d84cec6b1cfe92b343ec968d1bc4cc8a7202ce3a59c74a90bbcf1.html">Repeat click tab menu and item </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-04-2019 23:04</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to understand a word that I don't know
+As a user
+I want to be able to look up the meaning of the word
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="6fafb72680a7be349523397ff1f73a88beee77140773faa1e3d85570a1e9743a.html">Tab Menu Quick Tests
+                                    (story)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Repeat click tab menu and item
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="da58b5958df6235a9da3767d653929a97ba65707e23b625041689216c8217d87.png" title="Click menu steps: true, rgba(255, 255, 255, 1)" width="960"/>
+                <img src="da58b5958df6235a9da3767d653929a97ba65707e23b625041689216c8217d87.png" title="Is the home page" width="960"/>
+                <img src="scaled_244968d9d960183d026d0e1e6a1f0707ff1ab0c9cf8b5e6ea2d0a9db3f4c2686.png" title="Is the home page" width="960"/>
+                <img src="ba7b468eea4c3238fa981392e21a726e515f1a5c4f30ad2359a70ff62b23fd9b.png" title="Click menu" width="960"/>
+                <img src="da58b5958df6235a9da3767d653929a97ba65707e23b625041689216c8217d87.png" title="Click menu" width="960"/>
+                <img src="da58b5958df6235a9da3767d653929a97ba65707e23b625041689216c8217d87.png" title="Tab menu should be expended: true" width="960"/>
+                <img src="da58b5958df6235a9da3767d653929a97ba65707e23b625041689216c8217d87.png" title="Tab menu should be focused: rgba(255, 255, 255, 1)" width="960"/>
+                <img src="scaled_33f46dc96e137b0e51476e5a86cce93625f113cfd54665404be83dbeabf76898.png" title="Click tab menu item steps: Cosmetice si Parfumuri &gt; Apa de parfum, Apa de parfum" width="960"/>
+                <img src="scaled_986bbd3fe1c938f37d124897f1e7d0236ee4ddcb6d865af7a02e4a5a6a3f47b1.png" title="Open search result page: cosmetice-si-parfumuri/parfumuri/apa-de-parfum" width="960"/>
+                <img src="scaled_e11ca60823ea2715d68d556c68fdf6ecb9904e537939b7fb449b5c7878e5849f.png" title="Open search result page: cosmetice-si-parfumuri/parfumuri/apa-de-parfum" width="960"/>
+                <img src="c5b87a8037d2377c47d3e55c4b458e660c370fbf675967e3cc2214e288e7263d.png" title="Should see title: Cosmetice si Parfumuri &gt; Apa de parfum" width="960"/>
+                <img src="c5b87a8037d2377c47d3e55c4b458e660c370fbf675967e3cc2214e288e7263d.png" title="Should see tab menu content: Apa de parfum" width="960"/>
+                <img src="scaled_02e44787fa142a5fdd647ca29c6dccfb374c0d577dd8d44b7771bd14b850ffba.png" title="Should see tab menu content: Apa de parfum" width="960"/>
+                <img src="scaled_7bc43def067dfa53a0359d2529076ff1360c36be5abd319ff2c996c2c90ae6bf.png" title="Click menu steps: true, rgba(255, 255, 255, 1)" width="960"/>
+                <img src="scaled_6f1b64dd8074a2533b327ef3197cb1d32d22385d48c7014df1d909af68caf89d.png" title="Click menu steps: true, rgba(255, 255, 255, 1)" width="960"/>
+                <img src="scaled_6e8abd3ee7a4ef0441e3f0b63f65e08a7e35f69b833c58276746e925c481ab3e.png" title="Is the home page" width="960"/>
+                <img src="scaled_ae79400943c255d4a0b76e571a10f9dd8d488038158a02fca35eee8a311ecdc9.png" title="Is the home page" width="960"/>
+                <img src="scaled_bc64dff07589f8ff7a9a1a176b18977537f7a356a19d22b70ddb915289ea2fbf.png" title="Click menu" width="960"/>
+                <img src="6f1b64dd8074a2533b327ef3197cb1d32d22385d48c7014df1d909af68caf89d.png" title="Click menu" width="960"/>
+                <img src="6f1b64dd8074a2533b327ef3197cb1d32d22385d48c7014df1d909af68caf89d.png" title="Tab menu should be expended: true" width="960"/>
+                <img src="6f1b64dd8074a2533b327ef3197cb1d32d22385d48c7014df1d909af68caf89d.png" title="Tab menu should be focused: rgba(255, 255, 255, 1)" width="960"/>
+                <img src="scaled_a7c61a1cd4cc6bc26799befd008df984ae8a3cc51237f7275b9c798860cd4dda.png" title="Click tab menu item steps: Cosmetice si Parfumuri &gt; Apa de parfum, Apa de parfum" width="960"/>
+                <img src="scaled_cd81c08c5000b36fd5bad63acd6e86eb968a0f9cf3200654ffab446c003a9792.png" title="Open search result page: cosmetice-si-parfumuri/parfumuri/apa-de-parfum" width="960"/>
+                <img src="scaled_af5120d93b4ce08ff318645c4294b210a4abb4522d1171ddd3cfdc29ebbb5cbc.png" title="Open search result page: cosmetice-si-parfumuri/parfumuri/apa-de-parfum" width="960"/>
+                <img src="scaled_49353a563bf4fd68a88c92094b3aa576e24449d1ce7b2e5091be420a146a48ad.png" title="Should see title: Cosmetice si Parfumuri &gt; Apa de parfum" width="960"/>
+                <img src="scaled_79e50557c271a45e43e7336812f153f1292c7341aae8032a9d9d1af06aa4680b.png" title="Should see title: Cosmetice si Parfumuri &gt; Apa de parfum" width="960"/>
+                <img src="scaled_a543b344159bc9141ec6456216867767f822ff9a506314b5e712673e3f4d2ff8.png" title="Should see tab menu content: Apa de parfum" width="960"/>
+                <img src="scaled_d5fdb641406e9cf6fa911fc778998edd30ea9bc41ac173f54840b15cbe0417ad.png" title="Should see tab menu content: Apa de parfum: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

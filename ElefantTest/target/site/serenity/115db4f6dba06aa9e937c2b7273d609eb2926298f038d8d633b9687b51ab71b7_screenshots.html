@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Serenity and JUnit</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b73ab2df35cd94b5317e6d6bfdb3d2310ff26862ef2f19989342051d05f64b83.html">Search</a></span>
+                > <span class="truncate-60"><a
+                    href="115db4f6dba06aa9e937c2b7273d609eb2926298f038d8d633b9687b51ab71b7.html">Login with invalid account </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-05-2019 19:15</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to understand a word that I don't know
+As a user
+I want to be able to look up the meaning of the word
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="ffe7c28a2369beedd0da64104295896947a54644118a29e87795dc2549157604.html">Login Function Tour Tests
+                                    (story)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Login with invalid account
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_52d2a27c198fad510cf2e9e3923f5703eb7ff2793b8fcfa3a2d6c5459431784d.png" title="Is login page" width="960"/>
+                <img src="scaled_a5046cb8866824f5dad88468c906c28184ddf76c749e6ab43db373cdec9360c2.png" title="Is login page" width="960"/>
+                <img src="scaled_2cce7d07a28a83945cacd47d2c7f27e9a2c41fe87fabc2d13eac8f1931b84f42.png" title="Login steps: mirela.bocsa@x2mobile.net, sdsd" width="960"/>
+                <img src="scaled_50d0fb668ec65281dabf594632aed378d96da9e43e831bd24ea86f14a9d3a390.png" title="Login steps: mirela.bocsa@x2mobile.net, sdsd" width="960"/>
+                <img src="scaled_dc1d1155498e65adcf228160060a0727475e107ce1dead13b09247461fbeceec.png" title="Enters email: mirela.bocsa@x2mobile.net" width="960"/>
+                <img src="scaled_8c81cf9a8634c8b39ab4d890a3096f3388a0aaedbf59a66713b76e480472014e.png" title="Enters email: mirela.bocsa@x2mobile.net" width="960"/>
+                <img src="scaled_6dc8dea1ed64f9e35ab64c26cd98c669f1be5bb6723e86c9232e4ebb72882fe5.png" title="Enters password: sdsd" width="960"/>
+                <img src="scaled_e0d7b06e0c3c608f85deb13319e7a5c98dd25bf7adb4157db10424e1d2a55254.png" title="Enters password: sdsd" width="960"/>
+                <img src="scaled_f5c180f9ec6eef102ae770143eea66427a4b7fcb9e79cb7530897562b843432e.png" title="Login" width="960"/>
+                <img src="scaled_6e5c3f1405daade7be1bae83f5416b25025aa9e2b2553dbcb26b6526a0ed576a.png" title="Login" width="960"/>
+                <img src="scaled_246c963fe5c6463da11e65ce3c8f4424c44ca501f1298dd30eef9bc6c7bab577.png" title="Should show invalid email or pass: Email-ul si/sau parola introduse sunt gresite." width="960"/>
+                <img src="scaled_56ff05010b61c09ed3da2083eb82ccea54aa092d53a8effc17873140b0721468.png" title="Should show invalid email or pass: Email-ul si/sau parola introduse sunt gresite." width="960"/>
+                <img src="scaled_df816acbd5513b1eae355247b4a837a375d4d895004646d26ebe546974b2a3df.png" title="Should email be read" width="960"/>
+                <img src="scaled_fe88ba41ff28b63c68f2cd5c05616b9db3490c11a45a994ce38810a0e5a89906.png" title="Should email be read" width="960"/>
+                <img src="scaled_48952b03131b3bca2a48e53bed75ba78596aca475da648e21c5ca5829fc6fd08.png" title="Should password be read" width="960"/>
+                <img src="scaled_2767ad5b935c82dcd4238397e35e8abedfd7ed3d6a9f690d43e1a413f776ef1c.png" title="Should password be read: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.8.1</span>
+</div>
+</body>
+</html>

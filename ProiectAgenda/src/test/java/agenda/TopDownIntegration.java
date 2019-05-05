@@ -147,7 +147,7 @@ public class TopDownIntegration {
         assertEquals(1, list.size());
         assertEquals("name1", list.get(0).getName());
     }
-    
+
     //integration P->A(valid)->B(valid)->C(valid)
     @Test
     public void testIntegrationPABC() throws Exception {

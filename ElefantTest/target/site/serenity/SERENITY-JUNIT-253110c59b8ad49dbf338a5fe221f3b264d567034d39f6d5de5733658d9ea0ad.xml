@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="ElefantTestWebSite.features.search.functionTourTests.LoginFunctionTourTests" skipped="0" tests="1" time="20.63" timestamp="2019-04-24T00:27:02.718666600+03:00[Europe/Athens]"><testcase classname="ElefantTestWebSite.features.search.functionTourTests.LoginFunctionTourTests" name="Login with password with length1"><failure message="&#10;Expected: a string containing &quot;introdu o adresa de email valida!&quot;&#10;     but: was &quot;email-ul si/sau parola introduse sunt gresite.&quot;" type="java.lang.AssertionError">
+Expected: a string containing "introdu o adresa de email valida!"
+     but: was "email-ul si/sau parola introduse sunt gresite."</failure><system-err>
+Expected: a string containing "introdu o adresa de email valida!"
+     but: was "email-ul si/sau parola introduse sunt gresite."&#13;
+ElefantTestWebSite.steps.serenity.LoginSteps.shouldShowInvalidEmailOrPass(LoginSteps.java:84)&#13;
+ElefantTestWebSite.features.search.functionTourTests.LoginFunctionTourTests.loginWithPasswordWithLength1(LoginFunctionTourTests.java:55)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>

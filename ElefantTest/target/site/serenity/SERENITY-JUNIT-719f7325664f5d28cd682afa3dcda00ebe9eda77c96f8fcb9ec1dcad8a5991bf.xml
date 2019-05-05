@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="ElefantTestWebSite.features.search.functionTourTests.SearchFunctionTourTests" skipped="0" tests="1" time="48.64" timestamp="2019-04-23T22:23:50.056656800+03:00[Europe/Athens]"><testcase classname="ElefantTestWebSite.features.search.functionTourTests.SearchFunctionTourTests" name="Searching string with length1"><failure message="&#10;Expected: every item is a string containing &quot;a&quot;&#10;     but: an item was &quot;Pour Me: A Life&quot;" type="java.lang.AssertionError">
+Expected: every item is a string containing "a"
+     but: an item was "Pour Me: A Life"</failure><system-err>
+Expected: every item is a string containing "a"
+     but: an item was "Pour Me: A Life"&#13;
+ElefantTestWebSite.steps.serenity.SearchSteps.shouldSeeSearchContent(SearchSteps.java:44)&#13;
+ElefantTestWebSite.features.search.functionTourTests.SearchFunctionTourTests.searchingStringWithLength1(SearchFunctionTourTests.java:43)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>

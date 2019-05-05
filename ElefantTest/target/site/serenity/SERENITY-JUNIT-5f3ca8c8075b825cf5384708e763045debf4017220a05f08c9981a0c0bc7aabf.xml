@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="ElefantTestWebSite.features.search.quickTests.RunQuickTests" skipped="0" tests="1" time="0.21" timestamp="2019-04-11T11:06:22.404609200+03:00[Europe/Athens]"><testcase classname="ElefantTestWebSite.features.search.quickTests.RunQuickTests" name="Run quick tests"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+ElefantTestWebSite.features.search.quickTests.LoginQuickTests.searchingByEmptyString(LoginQuickTests.java:24)&#13;
+ElefantTestWebSite.features.search.quickTests.RunQuickTests.runQuickTests(RunQuickTests.java:13)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+</system-err></testcase></testsuite>
