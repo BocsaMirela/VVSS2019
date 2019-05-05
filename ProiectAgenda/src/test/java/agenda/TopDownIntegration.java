@@ -59,46 +59,6 @@ public class TopDownIntegration {
         fail();
     }
 
-    //test module B -F02 -unit testing
-    @Test
-    public void testUnitB() throws Exception {
-        repositoryActivity = new RepositoryActivityFile("", new ArrayList<Contact>());
-
-        Activity activity = new Activity("n", new Date(Long.parseLong("1363775400000")),
-                new Date(Long.parseLong("1363775400000")), new ArrayList<Contact>(), "d");
-        boolean result = repositoryActivity.add(activity);
-        Assert.assertTrue(result);
-        int nBefore = repositoryActivity.getAll().size();
-
-        Activity activity2 = new Activity("n", new Date(Long.parseLong("1363775400000")),
-                new Date(Long.parseLong("1363775400000")), new ArrayList<Contact>(), "d");
-
-        result = repositoryActivity.add(activity2);
-        int nAfter = repositoryActivity.getAll().size();
-
-        Assert.assertTrue(result);
-        assert (nBefore == nAfter - 1);
-
-    }
-
-    //test module C -F03 -unit testing
-    @Test
-    public void testUnitC() throws Exception {
-        repositoryActivity=new RepositoryActivityMock();
-        controllerActivity=new ControllerActivity(repositoryActivity);
-
-        long dateLongTestS = Long.parseLong("1363775400000");
-        long dateLongTestD = Long.parseLong("1363875400000");
-        repositoryActivity.add(new Activity("name1", new Date(dateLongTestS), new Date(dateLongTestD), new ArrayList<Contact>(), "Activity"));
-
-        long dateLong = Long.parseLong("1363777200000");
-        List<Activity> list = controllerActivity.activitiesOnDate("name1", new Date(dateLong));
-        assertFalse(list.isEmpty());
-        assertEquals(1, list.size());
-        assertEquals("name1", list.get(0).getName());
-    }
-
-
     //integration P->A(valid)
     @Test
     public void testIntegrationPA() throws Exception {
@@ -121,6 +81,28 @@ public class TopDownIntegration {
         assertEquals(1, list.size());
         assertEquals("name1", list.get(0).getName());
         assertEquals(new Date(Long.parseLong("1363775400000")), list.get(0).getDuration());
+    }
+
+    //test module B -F02 -unit testing
+    @Test
+    public void testUnitB() throws Exception {
+        repositoryActivity = new RepositoryActivityFile("", new ArrayList<Contact>());
+
+        Activity activity = new Activity("n", new Date(Long.parseLong("1363775400000")),
+                new Date(Long.parseLong("1363775400000")), new ArrayList<Contact>(), "d");
+        boolean result = repositoryActivity.add(activity);
+        Assert.assertTrue(result);
+        int nBefore = repositoryActivity.getAll().size();
+
+        Activity activity2 = new Activity("n", new Date(Long.parseLong("1363775400000")),
+                new Date(Long.parseLong("1363775400000")), new ArrayList<Contact>(), "d");
+
+        result = repositoryActivity.add(activity2);
+        int nAfter = repositoryActivity.getAll().size();
+
+        Assert.assertTrue(result);
+        assert (nBefore == nAfter - 1);
+
     }
 
     //integration P->A(valid)->B(valid)
@@ -147,6 +129,25 @@ public class TopDownIntegration {
         assertEquals(new Date(Long.parseLong("1363775400000")), list.get(0).getDuration());
     }
 
+
+
+    //test module C -F03 -unit testing
+    @Test
+    public void testUnitC() throws Exception {
+        repositoryActivity=new RepositoryActivityMock();
+        controllerActivity=new ControllerActivity(repositoryActivity);
+
+        long dateLongTestS = Long.parseLong("1363775400000");
+        long dateLongTestD = Long.parseLong("1363875400000");
+        repositoryActivity.add(new Activity("name1", new Date(dateLongTestS), new Date(dateLongTestD), new ArrayList<Contact>(), "Activity"));
+
+        long dateLong = Long.parseLong("1363777200000");
+        List<Activity> list = controllerActivity.activitiesOnDate("name1", new Date(dateLong));
+        assertFalse(list.isEmpty());
+        assertEquals(1, list.size());
+        assertEquals("name1", list.get(0).getName());
+    }
+    
     //integration P->A(valid)->B(valid)->C(valid)
     @Test
     public void testIntegrationPABC() throws Exception {
